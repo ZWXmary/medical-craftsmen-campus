@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a33d31">
+  <meta name="description" content="仁心引路，匠心致远。走近三位医务工匠的故事，聆听语音寄语，回看活动中的成长启发。">
+  <title>仁心引路，匠心致远 · 医务工匠进校园</title>
+  <link rel="icon" href="practice-tuanzi.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳转到正文</a>
+  <header class="site-header">
+    <a href="#" class="brand" aria-label="卢小团实践部，返回首页">
+      <span class="brand-image"><img src="practice-tuanzi.png" alt="实践部小团" width="710" height="520"></span>
+      <span><strong>卢小团 · 实践部</strong><small>医务工匠进校园</small></span>
+    </a>
+    <nav aria-label="主要导航"><a href="#voices">听见寄语</a><a href="#stories">走近工匠</a><a href="#review">活动回顾</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span>医务工匠进校园 · 活动回看</p>
+        <h1 id="hero-title">仁心引路，<br><span>匠心致远。</span></h1>
+        <p class="hero-lead">把一次相遇，<br class="mobile-break">留在更长的成长里。</p>
+        <p class="hero-description">听前辈回望医路上的选择与坚持，<br class="desktop-break">带着自己的问题，找到继续向前的启发。</p>
+        <div class="hero-actions"><a class="button primary" href="#voices">听见老师的寄语 <span aria-hidden="true">↗</span></a><a class="text-link" href="#stories">先读一段故事 <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><p>一份寄语，一个故事，<br>一份可以反复打开的成长陪伴。</p></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-caption"><span aria-hidden="true">✦</span> 小团陪你，慢慢找到方向</div>
+        <div class="mascot-paper"><img src="practice-tuanzi.png" alt="笑着展开红色文件袋的实践部小团" width="710" height="520" fetchpriority="high"></div>
+        <div class="art-footer"><span>仁心 · 匠心 · 青年成长</span><span aria-hidden="true">01—03</span></div>
+      </div>
+    </section>
+
+    <section id="voices" class="section voices" aria-labelledby="voices-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / 听见寄语</p><h2 id="voices-title">把老师的声音，<br class="mobile-break">留在身边。</h2></div><p class="section-intro">忙碌、迷茫，或需要一点勇气时，<br>回到这里，再听一次。</p></div>
+      <div class="guest-tabs" role="tablist" aria-label="选择嘉宾">
+        <button id="tab-zang" class="guest-tab active" role="tab" aria-controls="voice-panel" aria-selected="true" data-guest="zang"><span class="tab-name">臧潞</span><span class="tab-field">瑞金医院</span></button>
+        <button id="tab-du" class="guest-tab" role="tab" aria-controls="voice-panel" aria-selected="false" tabindex="-1" data-guest="du"><span class="tab-name">杜鹏</span><span class="tab-field">新华医院</span></button>
+        <button id="tab-zheng" class="guest-tab" role="tab" aria-controls="voice-panel" aria-selected="false" tabindex="-1" data-guest="zheng"><span class="tab-name">郑宪友</span><span class="tab-field">第六人民医院</span></button>
+      </div>
+      <div id="voice-panel" class="voice-panel" role="tabpanel" aria-labelledby="tab-zang">
+        <div class="guest-summary"><span class="honor">上海医务工匠</span><h3 id="voice-name">臧潞<span>老师</span></h3><p id="voice-role" class="guest-role">瑞金医院普外科副主任</p><div class="short-rule"></div><p id="voice-field" class="guest-field">胃肠肿瘤微创外科</p><p id="voice-hook" class="guest-hook">对医学的热爱，一定要从入学时就非常坚定吗？</p><a id="story-link" class="text-link" href="#story-zang">走进他的故事 <span aria-hidden="true">↗</span></a></div>
+        <div class="audio-area">
+          <div class="audio-caption"><span>留给青年的一份嘱托</span><span id="audio-status" class="status">待更新</span></div>
+          <div id="audio-placeholder" class="audio-placeholder"><span class="play-illustration" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5v14l11-7z"/></svg></span><div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <audio id="guest-audio" controls preload="none" hidden aria-label="嘉宾语音寄语"></audio>
+          <p id="audio-message" class="audio-message">老师的语音寄语正在准备中，上线后可在这里聆听。</p>
+          <div class="transcript"><h4><span aria-hidden="true">≡</span> 寄语文字稿</h4><p id="transcript-text">经老师确认的寄语文字稿将在这里同步更新，方便你随时阅读。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="section stories" aria-labelledby="stories-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / 走近工匠</p><h2 id="stories-title">先认识一个人，<br class="mobile-break">再读懂一份匠心。</h2></div><p class="section-intro">带着问题去读，<br>也带着思考来到访谈现场。</p></div>
+      <div class="story-list">
+        <article id="story-zang" class="story-card"><div class="story-number" aria-hidden="true">01</div><div class="story-content"><p class="story-meta">臧潞 / 瑞金医院</p><h3>热爱，能在医路上慢慢生长。</h3><p class="story-text">在署名文章中，臧潞老师回顾，最初选择医学与父母的愿望有关，而对这份事业的热爱，是在学习与工作中逐渐形成的。从走进医学到认同医学，方向也可以在真实的接触中慢慢清晰。</p><details><summary>带着这个问题，继续思考 <span aria-hidden="true">＋</span></summary><div class="question-content"><p>如果我现在还没有十分坚定的兴趣，可以通过哪些接触和尝试，逐渐认识自己？</p><a href="https://hum.cmt.com.cn/detail/948473.html" target="_blank" rel="noopener noreferrer">阅读臧老师的署名文章 ↗</a></div></details></div><span class="story-keyword">认定方向</span></article>
+        <article id="story-du" class="story-card"><div class="story-number" aria-hidden="true">02</div><div class="story-content"><p class="story-meta">杜鹏 / 新华医院</p><h3>把细节做深，回应真实的需要。</h3><p class="story-text">从储袋手术的规范到造口缝合的细节，杜鹏老师持续关注治疗效果与患者术后的生活质量。一个看似细小的问题，也可以成为持续改进的起点：多一次观察、多一步探索，让患者的生活更好一些。</p><details><summary>带着这个问题，继续思考 <span aria-hidden="true">＋</span></summary><div class="question-content"><p>眼前的学习或科研任务，究竟在回答什么问题？我能怎样从“完成工作”，走向自己的观察与思考？</p><a href="https://www.xinhuamed.com.cn/news/news-9999.html" target="_blank" rel="noopener noreferrer">阅读杜老师的获评报道 ↗</a></div></details></div><span class="story-keyword">持续精进</span></article>
+        <article id="story-zheng" class="story-card"><div class="story-number" aria-hidden="true">03</div><div class="story-content"><p class="story-meta">郑宪友 / 第六人民医院</p><h3>修复之后，仍有更长的人生。</h3><p class="story-text">郑宪友老师长期从事复杂肢体损伤的显微修复与重建。在他的教学分享中，看见患者的真实需要，与建立青年自己的问题意识、判断能力紧密相连。从基础实验和临床观察开始，知识才能逐渐成为可靠的能力。</p><details><summary>带着这个问题，继续思考 <span aria-hidden="true">＋</span></summary><div class="question-content"><p>我怎样知道自己真正理解了知识，又怎样把学过的内容，逐步用来回应实际问题？</p><a href="https://www.6thhosp.com/Content/News/10060" target="_blank" rel="noopener noreferrer">阅读郑老师的导师分享 ↗</a></div></details></div><span class="story-keyword">传递经验</span></article>
+      </div>
+    </section>
+
+    <section class="reflection" aria-label="带走一份思考"><div class="reflection-mark" aria-hidden="true">✦</div><div><p class="eyebrow">与青同行</p><h2>带走一个问题，<br>也带走继续探索的勇气。</h2><p>你最希望从老师的经历中获得什么？<br>下一步，可以从哪一次观察、尝试或请教开始？</p></div><span class="reflection-flower" aria-hidden="true">✳</span></section>
+
+    <section id="review" class="section review" aria-labelledby="review-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / 活动回顾</p><h2 id="review-title">当晚的启发，<br class="mobile-break">在这里继续。</h2></div><p class="section-intro">整理故事、建议与问题回应，<br>让每一次重读，都有新的收获。</p></div>
+      <div id="recap-list" class="recap-list" aria-live="polite"></div>
+      <p class="review-note">活动结束后，纪要与三位嘉宾的回顾推送将陆续发布。</p>
+    </section>
+    <section class="closing"><img src="practice-tuanzi.png" alt="实践部小团" width="710" height="520" loading="lazy"><div><p>小团陪你，把匠心的启发带进日常。</p><span>有空时，再回来听听、读读。</span></div><a href="#" aria-label="回到页面顶部">回到顶部 ↑</a></section>
+  </main>
+  <footer><span>卢小团 · 实践部</span><span>仁心引路，匠心致远 · 医务工匠进校园</span></footer>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>
