@@ -1,25 +1,17 @@
-# 医务工匠进校园活动回看网页
+# 医务工匠进校园活动网页
 
-这份网页可通过 GitHub Pages 发布，包含实践部小团形象、三位嘉宾介绍与故事、语音寄语入口、文字稿及会后回顾入口。
+正式标题：“仁心引路，匠心致远” 医务工匠进校园——共话医路初心与职业坚守
 
-## 首次发布
+保持原仓库、main 分支及根目录发布，原网址和二维码不变。
 
-1. 在自己的 GitHub 账号下创建公开仓库，例如 medical-craftsmen。
-2. 上传此目录的全部文件。index.html 必须直接位于仓库根目录，不要再套一层文件夹。
-3. 在仓库 Settings → Pages 中，选择 Deploy from a branch；分支选择 main，目录选择 /(root)，保存。
-4. 等待 GitHub 显示网站地址。用手机浏览器和微信扫码实测页面、图片和后续音频播放。
-5. 确认能访问后，用 GitHub Pages 的正式地址生成新的二维码。原 chatgpt.site 地址对应的二维码不可继续用于这个新网址。
+## 内容更新
+- index.html：故事、活动介绍、嘉宾资料、访谈话题、时间地点。
+- content.json：三位嘉宾的 audioSrc（录音相对路径）、transcript（文字稿）；recaps 中填写会后文章 url。未提供时保留 null。
+- app.js：含 content.json 的本地兜底数据。在线读取 content.json 优先；如需直接双击网页预览也一致，可同步修改 fallback 数据。
+- story-strip.png：简约小团故事插画；象征性演绎，不是嘉宾肖像或现场实录。三个故事按左中右对应臧潞、杜鹏、郑宪友。
+- practice-tuanzi.png：用户提供的实践部小团原图。
 
-## 后续更新
+录音和文字稿可分别发布。不要把音频放成自动播放。会后文章未上线时显示“活动后揭秘”。
 
-修改 content.json，再提交到同一个仓库。保持 GitHub 用户名、仓库名称及访问路径不变，二维码不必更换。
-
-- guests.zang、guests.du、guests.zheng 分别对应臧潞、杜鹏、郑宪友。
-- audioSrc：目前为 null；录音确认后将 MP3 上传到仓库根目录，并填写相对地址，例如 zang-message.mp3。
-- transcript：目前为 null；补入经嘉宾确认的文字稿。换段在 JSON 字符串中使用 \n。
-- recaps[].url：目前为 null；补入会后推送或纪要的正式链接，页面会显示可点击的阅读入口。
-- 嘉宾故事在 index.html 中，可直接修改文字后提交。
-
-## 说明
-
-这个网页不需要服务器程序、数据库或构建步骤。语音、文字稿和会后推送尚未提供，页面明确标注待更新。公开仓库内的文件可被别人查看，上传时只放准备用于公开展示的素材。
+## 发布
+把本目录的 index.html、style.css、app.js、content.json、story-strip.png、practice-tuanzi.png、organization-emblem.jpg、.nojekyll 上传至现有仓库根目录（覆盖同名文件），提交到 main。保持 GitHub Pages 原有设置。不要将整个文件夹嵌套上传。
